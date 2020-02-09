@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		499E880623F0959D00D4FB28 /* Button.swift in Sources */ = {isa = PBXBuildFile; fileRef = 499E880523F0959D00D4FB28 /* Button.swift */; };
+		499E880923F095E500D4FB28 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 499E880823F095E500D4FB28 /* Extensions.swift */; };
+		499E880B23F0964900D4FB28 /* Label.swift in Sources */ = {isa = PBXBuildFile; fileRef = 499E880A23F0964900D4FB28 /* Label.swift */; };
 		49DD6B0E23F08D5500D960B4 /* BaseKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 49DD6B0423F08D5500D960B4 /* BaseKit.framework */; };
 		49DD6B1323F08D5500D960B4 /* BaseKitTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49DD6B1223F08D5500D960B4 /* BaseKitTests.swift */; };
 		49DD6B1523F08D5500D960B4 /* BaseKit.h in Headers */ = {isa = PBXBuildFile; fileRef = 49DD6B0723F08D5500D960B4 /* BaseKit.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -23,6 +26,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		499E880523F0959D00D4FB28 /* Button.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Button.swift; sourceTree = "<group>"; };
+		499E880823F095E500D4FB28 /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
+		499E880A23F0964900D4FB28 /* Label.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Label.swift; sourceTree = "<group>"; };
 		49DD6B0423F08D5500D960B4 /* BaseKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = BaseKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		49DD6B0723F08D5500D960B4 /* BaseKit.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BaseKit.h; sourceTree = "<group>"; };
 		49DD6B0823F08D5500D960B4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -50,6 +56,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		499E880723F095CD00D4FB28 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				499E880823F095E500D4FB28 /* Extensions.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
 		49DD6AFA23F08D5500D960B4 = {
 			isa = PBXGroup;
 			children = (
@@ -71,8 +85,11 @@
 		49DD6B0623F08D5500D960B4 /* BaseKit */ = {
 			isa = PBXGroup;
 			children = (
+				499E880723F095CD00D4FB28 /* Extensions */,
 				49DD6B0723F08D5500D960B4 /* BaseKit.h */,
+				499E880523F0959D00D4FB28 /* Button.swift */,
 				49DD6B0823F08D5500D960B4 /* Info.plist */,
+				499E880A23F0964900D4FB28 /* Label.swift */,
 			);
 			path = BaseKit;
 			sourceTree = "<group>";
@@ -148,6 +165,7 @@
 				TargetAttributes = {
 					49DD6B0323F08D5500D960B4 = {
 						CreatedOnToolsVersion = 11.3.1;
+						LastSwiftMigration = 1130;
 					};
 					49DD6B0C23F08D5500D960B4 = {
 						CreatedOnToolsVersion = 11.3.1;
@@ -195,6 +213,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				499E880623F0959D00D4FB28 /* Button.swift in Sources */,
+				499E880923F095E500D4FB28 /* Extensions.swift in Sources */,
+				499E880B23F0964900D4FB28 /* Label.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -340,6 +361,7 @@
 		49DD6B1923F08D5500D960B4 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
@@ -355,6 +377,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.tsukudabuddha.BaseKit;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -363,6 +386,7 @@
 		49DD6B1A23F08D5500D960B4 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
@@ -386,6 +410,7 @@
 		49DD6B1C23F08D5500D960B4 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = BaseKitTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -403,6 +428,7 @@
 		49DD6B1D23F08D5500D960B4 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = BaseKitTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
