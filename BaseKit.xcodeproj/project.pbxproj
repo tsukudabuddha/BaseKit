@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		497038EC23F0A21B0021CD78 /* ImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 497038EB23F0A21B0021CD78 /* ImageView.swift */; };
 		499E880623F0959D00D4FB28 /* Button.swift in Sources */ = {isa = PBXBuildFile; fileRef = 499E880523F0959D00D4FB28 /* Button.swift */; };
 		499E880923F095E500D4FB28 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 499E880823F095E500D4FB28 /* Extensions.swift */; };
 		499E880B23F0964900D4FB28 /* Label.swift in Sources */ = {isa = PBXBuildFile; fileRef = 499E880A23F0964900D4FB28 /* Label.swift */; };
@@ -26,6 +27,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		497038EB23F0A21B0021CD78 /* ImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageView.swift; sourceTree = "<group>"; };
 		499E880523F0959D00D4FB28 /* Button.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Button.swift; sourceTree = "<group>"; };
 		499E880823F095E500D4FB28 /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
 		499E880A23F0964900D4FB28 /* Label.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Label.swift; sourceTree = "<group>"; };
@@ -90,6 +92,7 @@
 				499E880523F0959D00D4FB28 /* Button.swift */,
 				49DD6B0823F08D5500D960B4 /* Info.plist */,
 				499E880A23F0964900D4FB28 /* Label.swift */,
+				497038EB23F0A21B0021CD78 /* ImageView.swift */,
 			);
 			path = BaseKit;
 			sourceTree = "<group>";
@@ -213,6 +216,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				497038EC23F0A21B0021CD78 /* ImageView.swift in Sources */,
 				499E880623F0959D00D4FB28 /* Button.swift in Sources */,
 				499E880923F095E500D4FB28 /* Extensions.swift in Sources */,
 				499E880B23F0964900D4FB28 /* Label.swift in Sources */,

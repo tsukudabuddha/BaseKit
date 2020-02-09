@@ -14,24 +14,27 @@ import UIKit
 class ExampleView: UIView {
     let titleLabel: Label
     let button: Button
+    let imageView: ImageView
     
     init() {
         titleLabel = LabelViewModel(text: "Examples", textColor: .black, font: .boldSystemFont(ofSize: 28)).makeView()
         button = ButtonViewModel(title: "Click Me! And check output", didTap: { print("Clicked Button") }).makeView()
+        imageView = ImageViewModel(imageName: "Left", contentMode: .scaleAspectFit).makeView()
         super.init(frame: .zero)
         
-        addSubviews([titleLabel, button])
+        addSubviews([titleLabel, button, imageView])
         installConstraints()
     }
     
     func installConstraints() {
         let views = [
             "title": titleLabel,
-            "button": button
+            "button": button,
+            "imageView": imageView
         ]
         
         NSLayoutConstraint.constraints(withVisualFormats: [
-            "V:|-[title]-[button]-(>=10)-|",
+            "V:|-[title]-[button]-[imageView]-(>=10)-|",
         ], options: .alignAllLeft, metrics: nil, views: views).activate()
     }
     
