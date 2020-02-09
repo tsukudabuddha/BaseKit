@@ -8,14 +8,14 @@
 
 import UIKit
 
-class LabelViewModel {
+public class LabelViewModel {
     
     let text: String
     let textColor: UIColor
     let font: UIFont
     
     
-    init(text: String,
+    public init(text: String,
          textColor: UIColor,
          font: UIFont) {
         self.text = text
@@ -24,11 +24,11 @@ class LabelViewModel {
     }
 }
 
-class Label: UIView {
+public class Label: UIView {
     
     private let label = UILabel()
     
-    init() {
+    public init() {
         super.init(frame: .zero)
         
         translatesAutoresizingMaskIntoConstraints = false
@@ -38,13 +38,13 @@ class Label: UIView {
         label.makePinToSuperviewConstraints().activate()
     }
     
-    required convenience init(viewModel: LabelViewModel) {
+    public required convenience init(viewModel: LabelViewModel) {
         self.init()
         
         configure(with: viewModel)
     }
     
-    func configure(with viewModel: LabelViewModel) {
+    public func configure(with viewModel: LabelViewModel) {
         label.text = viewModel.text
         label.textColor = viewModel.textColor
         label.font = viewModel.font

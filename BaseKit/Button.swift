@@ -8,13 +8,13 @@
 
 import UIKit
 
-class ButtonViewModel {
+public class ButtonViewModel {
     let title: String
     let imageName: String?
     let didTap: () -> Void
     
     
-    init(title: String,
+    public init(title: String,
          imageName: String? = nil,
          didTap: @escaping () -> Void) {
         self.title = title
@@ -23,12 +23,12 @@ class ButtonViewModel {
     }
 }
 
-class Button: UIView {
+public class Button: UIView {
     
     private let button = UIButton()
     private var tapHandler: () -> Void = { }
     
-    init() {
+    public init() {
         super.init(frame: .zero)
         
         translatesAutoresizingMaskIntoConstraints = false
@@ -40,13 +40,13 @@ class Button: UIView {
         button.addTarget(self, action: #selector(handleTap), for: .touchUpInside)
     }
     
-    required convenience init(viewModel: ButtonViewModel) {
+    public required convenience init(viewModel: ButtonViewModel) {
         self.init()
         
         configure(with: viewModel)
     }
     
-    func configure(with viewModel: ButtonViewModel) {
+    public func configure(with viewModel: ButtonViewModel) {
         button.setTitle(viewModel.title, for: .normal)
         tapHandler = viewModel.didTap
         if let imageName = viewModel.imageName {
@@ -58,7 +58,7 @@ class Button: UIView {
         tapHandler()
     }
     
-    required init?(coder: NSCoder) {
+    public required init?(coder: NSCoder) {
         fatalError("init(coder:) has not been implemented")
     }
     
