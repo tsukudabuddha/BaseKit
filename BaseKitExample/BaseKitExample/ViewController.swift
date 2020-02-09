@@ -15,6 +15,9 @@ class ViewController: UIViewController {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
         
+        let exampleView = ExampleView()
+        view.addSubview(exampleView)
+        exampleView.pinToSuperview()
     }
 
 

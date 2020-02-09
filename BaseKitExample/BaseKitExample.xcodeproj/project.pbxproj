@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		497038E623F09A9D0021CD78 /* BaseKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 497038E223F09A3A0021CD78 /* BaseKit.framework */; };
 		497038E723F09A9D0021CD78 /* BaseKit.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 497038E223F09A3A0021CD78 /* BaseKit.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		497038EA23F09C130021CD78 /* ExampleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 497038E923F09C130021CD78 /* ExampleView.swift */; };
 		499E884723F0986400D4FB28 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 499E884623F0986400D4FB28 /* AppDelegate.swift */; };
 		499E884923F0986400D4FB28 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 499E884823F0986400D4FB28 /* SceneDelegate.swift */; };
 		499E884B23F0986400D4FB28 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 499E884A23F0986400D4FB28 /* ViewController.swift */; };
@@ -50,6 +51,7 @@
 
 /* Begin PBXFileReference section */
 		497038DC23F09A3A0021CD78 /* BaseKit.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = BaseKit.xcodeproj; path = ../BaseKit.xcodeproj; sourceTree = "<group>"; };
+		497038E923F09C130021CD78 /* ExampleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExampleView.swift; sourceTree = "<group>"; };
 		499E884323F0986400D4FB28 /* BaseKitExample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BaseKitExample.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		499E884623F0986400D4FB28 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		499E884823F0986400D4FB28 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -112,6 +114,7 @@
 				499E884623F0986400D4FB28 /* AppDelegate.swift */,
 				499E884823F0986400D4FB28 /* SceneDelegate.swift */,
 				499E884A23F0986400D4FB28 /* ViewController.swift */,
+				497038E923F09C130021CD78 /* ExampleView.swift */,
 				499E884C23F0986400D4FB28 /* Main.storyboard */,
 				499E884F23F0986400D4FB28 /* Assets.xcassets */,
 				499E885123F0986400D4FB28 /* LaunchScreen.storyboard */,
@@ -218,6 +221,7 @@
 				499E884B23F0986400D4FB28 /* ViewController.swift in Sources */,
 				499E884723F0986400D4FB28 /* AppDelegate.swift in Sources */,
 				499E884923F0986400D4FB28 /* SceneDelegate.swift in Sources */,
+				497038EA23F09C130021CD78 /* ExampleView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

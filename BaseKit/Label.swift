@@ -22,6 +22,10 @@ public class LabelViewModel {
         self.font = font
         self.textColor = textColor
     }
+    
+    public func makeView() -> Label {
+        return Label(viewModel: self)
+    }
 }
 
 public class Label: UIView {

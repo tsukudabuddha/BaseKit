@@ -8,7 +8,7 @@
 
 import UIKit
 
-extension UIView {
+public extension UIView {
   
   func addSubviews(_ views: [UIView]) {
     for view in views {
@@ -33,7 +33,7 @@ extension UIView {
   }
 }
 
-extension Array where Element == NSLayoutConstraint {
+public extension Array where Element == NSLayoutConstraint {
   func activate() {
     for constraint in self {
       constraint.isActive = true
@@ -41,7 +41,7 @@ extension Array where Element == NSLayoutConstraint {
   }
 }
 
-extension Array where Element == UIView {
+public extension Array where Element == UIView {
   func disableAutoresizing() {
     for view in self {
       view.translatesAutoresizingMaskIntoConstraints = false
@@ -49,7 +49,7 @@ extension Array where Element == UIView {
   }
 }
 
-extension UIStackView {
+public extension UIStackView {
   func addArrangedSubviews(_ views: [UIView]) {
     for view in views {
       addArrangedSubview(view)
@@ -58,7 +58,7 @@ extension UIStackView {
 }
 
 // MARK: Hide Keyboard when tap
-extension UIViewController {
+public extension UIViewController {
     func hideKeyboardWhenTappedAround() {
         let tap: UITapGestureRecognizer = UITapGestureRecognizer(target: self, action: #selector(UIViewController.dismissKeyboard))
         tap.cancelsTouchesInView = false
@@ -70,7 +70,7 @@ extension UIViewController {
     }
 }
 
-extension NSLayoutConstraint {
+public extension NSLayoutConstraint {
     static func constraints(withVisualFormats vfls: [String], options: NSLayoutConstraint.FormatOptions, metrics: [String : Any]?, views: [String : Any]) -> [NSLayoutConstraint] {
         return vfls.flatMap { return NSLayoutConstraint.constraints(withVisualFormat: $0, options: options, metrics: metrics, views: views) }
     }
