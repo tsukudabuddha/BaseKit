@@ -15,14 +15,16 @@ class ExampleView: UIView {
     let titleLabel: Label
     let button: Button
     let imageView: ImageView
+    let textField: TextField
     
     init() {
         titleLabel = LabelViewModel(text: "Examples", textColor: .black, font: .boldSystemFont(ofSize: 28)).makeView()
         button = ButtonViewModel(title: "Click Me! And check output", didTap: { print("Clicked Button") }).makeView()
         imageView = ImageViewModel(imageName: "Left", contentMode: .scaleAspectFit).makeView()
+        textField = TextFieldModel(placeholder: "Placeholder", text: nil, delegate: nil).makeView()
         super.init(frame: .zero)
         
-        addSubviews([titleLabel, button, imageView])
+        addSubviews([titleLabel, button, imageView, textField])
         installConstraints()
     }
     
@@ -30,11 +32,12 @@ class ExampleView: UIView {
         let views = [
             "title": titleLabel,
             "button": button,
-            "imageView": imageView
+            "imageView": imageView,
+            "textField": textField
         ]
         
         NSLayoutConstraint.constraints(withVisualFormats: [
-            "V:|-[title]-[button]-[imageView]-(>=10)-|",
+            "V:|-[title]-[button]-[imageView]-[textField]-(>=10)-|",
         ], options: .alignAllLeft, metrics: nil, views: views).activate()
     }
     
