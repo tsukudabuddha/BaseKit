@@ -8,7 +8,7 @@
 
 import UIKit
 
-public class ButtonViewModel {
+public class ButtonViewModel: ViewModel {
     let title: String
     let textColor: UIColor
     let imageName: String?
@@ -30,7 +30,7 @@ public class ButtonViewModel {
     }
 }
 
-public class Button: UIView {
+public class Button: UIView, ViewModelConfigurable {
     
     private let button = UIButton()
     private var tapHandler: () -> Void = { }

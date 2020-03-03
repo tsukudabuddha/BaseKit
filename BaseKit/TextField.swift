@@ -8,7 +8,7 @@
 
 import UIKit
 
-public class TextFieldModel {
+public class TextFieldModel: ViewModel {
     
     let placeholder: String
     let text: String?
@@ -31,7 +31,7 @@ public class TextFieldModel {
     }
 }
 
-public class TextField: UIView {
+public class TextField: UIView, ViewModelConfigurable {
     
     private let textField = UITextField()
     

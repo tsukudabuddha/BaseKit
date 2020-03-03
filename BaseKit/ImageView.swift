@@ -8,7 +8,7 @@
 
 import UIKit
 
-public class ImageViewModel {
+public class ImageViewModel: ViewModel {
     
     let imageName: String
     let contentMode: UIView.ContentMode
@@ -25,7 +25,7 @@ public class ImageViewModel {
     }
 }
 
-public class ImageView: UIView {
+public class ImageView: UIView, ViewModelConfigurable {
     
     private let imageView = UIImageView()
     

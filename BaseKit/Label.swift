@@ -8,7 +8,7 @@
 
 import UIKit
 
-public class LabelViewModel {
+public class LabelViewModel: ViewModel {
     
     let text: String
     let textColor: UIColor
@@ -28,7 +28,7 @@ public class LabelViewModel {
     }
 }
 
-public class Label: UIView {
+public class Label: UIView, ViewModelConfigurable {
     
     private let label = UILabel()
     

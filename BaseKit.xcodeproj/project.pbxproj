@@ -15,6 +15,7 @@
 		49DD6B0E23F08D5500D960B4 /* BaseKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 49DD6B0423F08D5500D960B4 /* BaseKit.framework */; };
 		49DD6B1323F08D5500D960B4 /* BaseKitTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49DD6B1223F08D5500D960B4 /* BaseKitTests.swift */; };
 		49DD6B1523F08D5500D960B4 /* BaseKit.h in Headers */ = {isa = PBXBuildFile; fileRef = 49DD6B0723F08D5500D960B4 /* BaseKit.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		49E7D935240E2E4F004F5929 /* ViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49E7D934240E2E4F004F5929 /* ViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -39,6 +40,7 @@
 		49DD6B0D23F08D5500D960B4 /* BaseKitTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BaseKitTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		49DD6B1223F08D5500D960B4 /* BaseKitTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseKitTests.swift; sourceTree = "<group>"; };
 		49DD6B1423F08D5500D960B4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		49E7D934240E2E4F004F5929 /* ViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -96,6 +98,7 @@
 				499E880A23F0964900D4FB28 /* Label.swift */,
 				497038EB23F0A21B0021CD78 /* ImageView.swift */,
 				497038ED23F0A7630021CD78 /* TextField.swift */,
+				49E7D934240E2E4F004F5929 /* ViewModel.swift */,
 			);
 			path = BaseKit;
 			sourceTree = "<group>";
@@ -223,6 +226,7 @@
 				499E880623F0959D00D4FB28 /* Button.swift in Sources */,
 				499E880923F095E500D4FB28 /* Extensions.swift in Sources */,
 				497038EE23F0A7630021CD78 /* TextField.swift in Sources */,
+				49E7D935240E2E4F004F5929 /* ViewModel.swift in Sources */,
 				499E880B23F0964900D4FB28 /* Label.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
